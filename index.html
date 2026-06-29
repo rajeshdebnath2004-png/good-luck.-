@@ -107,7 +107,7 @@
             display: block;
             text-align: right;
             margin-top: 25px;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             font-weight: 700;
             color: #555;
             font-size: 15px;
@@ -134,7 +134,7 @@
             padding: 15px;
             border-radius: 12px;
             border-left: 4px solid #6b2d5c;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             line-height: 1.5;
             text-align: center;
             font-style: italic;
@@ -143,19 +143,20 @@
             z-index: 2;
         }
         
-        audio { width: 100%; margin-top: 10px; position: relative; z-index: 5; }
+        audio { width: 100%; margin-top: 5px; position: relative; z-index: 5; }
 
-        /* কার্ডের একদম নিচে স্পষ্ট করে দেখানোর জন্য নতুন স্টাইল */
-        .bottom-clue {
+        /* নতুন জায়গায় দেখানোর জন্য স্টাইল */
+        .mid-clue {
             display: block;
-            font-size: 12px;         /* সাইজ সামান্য বড় করা হলো */
-            color: #7f8c8d;         /* কালার ডার্ক করা হলো যাতে পরিষ্কার দেখা যায় */
-            margin-top: 35px;        /* অডিও প্লেয়ার থেকে বেশ খানিকটা নিচে নামানো হলো */
+            font-size: 11px;
+            color: #8e44ad;         /* সিগনেচারের বেগুনী কালারের সাথে ম্যাচ করা */
+            margin-bottom: 15px;     /* নিচে একটু স্পেস রাখার জন্য */
             text-align: center;
-            letter-spacing: 1px;
+            letter-spacing: 1.2px;
             position: relative;
             z-index: 6;
-            font-weight: bold;       /* লেখাটি একটু স্পষ্ট করার জন্য */
+            font-weight: bold;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -184,13 +185,13 @@
             "Believe in yourself, chase your dreams with all your heart, and let your beautiful voice fill the world with light. You are capable of amazing things!" 🚀🌟
         </div>
         
+        <!-- ইনস্পিরেশন বক্সের ঠিক নিচে নতুন পজিশন -->
+        <div class="mid-clue">ROT13 Decoder</div>
+        
         <!-- গান প্লেয়ার -->
         <audio controls>
             <source src="music.mp3" type="audio/mpeg">
         </audio>
-
-        <!-- আপনার নামের অংশ থেকে অনেকখানি নিচে স্পষ্ট আকারে ক্লু -->
-        <div class="bottom-clue">ROT13 Decoder</div>
     </div>
 
 </body>
