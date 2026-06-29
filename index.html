@@ -3,77 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Wishes For You!</title>
+    <title>Peaceful Moments</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            /* Pink color background with a cute cat image overlay */
-            background: linear-gradient(rgba(255, 182, 193, 0.6), rgba(255, 105, 180, 0.6)), 
-                        url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+            /* পাহাড়, গাছ, আকাশ এবং রিল্যাক্স করার দারুণ একটি ব্যাকগ্রাউন্ড ইমেজ */
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop') no-repeat center center/cover;
             font-family: 'Arial', sans-serif;
             padding: 20px;
         }
         .card {
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 255, 255, 0.85);
             padding: 35px 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            max-width: 420px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            max-width: 400px;
             width: 100%;
             text-align: center;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
         }
-        h1 {
-            color: #d1417a;
-            font-size: 24px;
-            margin-bottom: 10px;
+        h1 { color: #2c3e50; font-size: 26px; margin-bottom: 10px; }
+        h2 { color: #27ae60; font-size: 18px; margin-bottom: 20px; }
+        p { 
+            font-size: 16px; color: #34495e; line-height: 1.6; 
+            margin-bottom: 25px; background: rgba(255, 255, 255, 0.5); 
+            padding: 15px; border-radius: 15px; 
         }
-        h2 {
-            color: #ff6b8b;
-            font-size: 20px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        p {
-            font-size: 16px;
-            color: #4a4a4a;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            background: #fff0f3;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #ff6b8b;
-        }
-        /* Music Player Styling */
-        audio {
-            width: 100%;
-            border-radius: 30px;
-            background: #f1f3f4;
-            outline: none;
-        }
+        audio { width: 100%; margin-top: 10px; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>✨ Special Message ✨</h1>
-        <h2>Best wishes for your future!</h2>
+        <h1>✨ Peace & Calm ✨</h1>
+        <h2>Relaxing time for your future!</h2>
         
-        <!-- নিচের <p> ট্যাগের ভেতরের লেখাটি কেটে আপনার নিজের মেসেজটি লিখুন -->
-        <p>এখানে আপনার মনের মতো সুন্দর একটি মেসেজ টাইপ করে দিন। আপনি যা লিখতে চান তা এখানেই দেখাবে।</p>
+        <p>পাহাড়ের কোল ঘেঁষে শান্ত আকাশ আর প্রকৃতির মাঝে একটু রিল্যাক্স করার মুহূর্ত। আপনার আগামী দিনগুলোও যেন এমন সুন্দর আর শান্তিময় হয়।</p>
         
-        <!-- Audio Player (Play Button) -->
         <audio controls>
             <source src="music.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
         </audio>
     </div>
 
