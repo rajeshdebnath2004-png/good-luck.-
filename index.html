@@ -15,19 +15,21 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            /* Beautiful Soft Pink Gradient Background */
-            background: linear-gradient(135deg, #fff5f5 0%, #ffd3e2 100%);
+            /* Pink color background with a cute cat image overlay */
+            background: linear-gradient(rgba(255, 182, 193, 0.6), rgba(255, 105, 180, 0.6)), 
+                        url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
             font-family: 'Arial', sans-serif;
             padding: 20px;
         }
         .card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.92);
             padding: 35px 25px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             max-width: 420px;
             width: 100%;
             text-align: center;
+            backdrop-filter: blur(5px);
         }
         h1 {
             color: #d1417a;
@@ -65,8 +67,10 @@
         <h1>✨ Special Message ✨</h1>
         <h2>Best wishes for your future!</h2>
         
-        <p>Ekhane apnar moner moto ja khushi shundor kore likhe din. Apni ja massage likhte chan, sheti ekhane ashbe.</p>
+        <!-- নিচের <p> ট্যাগের ভেতরের লেখাটি কেটে আপনার নিজের মেসেজটি লিখুন -->
+        <p>এখানে আপনার মনের মতো সুন্দর একটি মেসেজ টাইপ করে দিন। আপনি যা লিখতে চান তা এখানেই দেখাবে।</p>
         
+        <!-- Audio Player (Play Button) -->
         <audio controls>
             <source src="music.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
