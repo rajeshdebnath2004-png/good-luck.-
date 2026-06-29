@@ -4,36 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peaceful Moments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+    
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        /* সম্পূর্ণ CSS দিয়ে তৈরি শান্ত প্রকৃতির ব্যাকগ্রাউন্ড (আকাশ, পাহাড় ও গাছের ছোঁয়া) */
         body {
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            /* পাহাড়, গাছ, আকাশ এবং রিল্যাক্স করার দারুণ একটি ব্যাকগ্রাউন্ড ইমেজ */
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop') no-repeat center center/cover;
-            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #1a3c40 0%, #407088 40%, #132743 100%);
+            font-family: 'Hind Siliguri', 'Arial', sans-serif;
             padding: 20px;
+            overflow: hidden;
+            position: relative;
         }
+
+        /* পাহাড় ও প্রকৃতির আবহ তৈরির জন্য ব্যাকগ্রাউন্ড এলিমেন্ট */
+        body::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 35vh;
+            background: radial-gradient(circle at 50% 150%, #0b2528 0%, #051618 70%);
+            border-radius: 100% 100% 0 0 / 20% 20% 0 0;
+            z-index: 1;
+        }
+
+        body::after {
+            content: '🌲  🌲  ⛰️  🌲  🌲';
+            position: absolute;
+            bottom: 32vh;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            opacity: 0.3;
+            letter-spacing: 15px;
+            z-index: 1;
+        }
+
         .card {
-            background: rgba(255, 255, 255, 0.85);
-            padding: 35px 25px;
+            background: rgba(255, 255, 255, 0.88);
+            padding: 40px 25px;
             border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.5);
             max-width: 400px;
             width: 100%;
             text-align: center;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            z-index: 2; /* কার্ডটি যেন ব্যাকগ্রাউন্ডের ওপরে থাকে */
         }
-        h1 { color: #2c3e50; font-size: 26px; margin-bottom: 10px; }
-        h2 { color: #27ae60; font-size: 18px; margin-bottom: 20px; }
-        p { 
-            font-size: 16px; color: #34495e; line-height: 1.6; 
-            margin-bottom: 25px; background: rgba(255, 255, 255, 0.5); 
-            padding: 15px; border-radius: 15px; 
+        
+        h1 { 
+            font-family: 'Dancing Script', cursive;
+            color: #0f3033; 
+            font-size: 36px; 
+            margin-bottom: 5px;
         }
+        
+        h2 { 
+            color: #2e696e; 
+            font-size: 14px; 
+            margin-bottom: 25px; 
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .message-box { 
+            font-size: 19px; 
+            color: #1a252f; 
+            line-height: 1.8; 
+            margin-bottom: 30px; 
+            background: rgba(255, 255, 255, 0.7); 
+            padding: 20px; 
+            border-radius: 15px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+            font-weight: 500;
+        }
+        
         audio { width: 100%; margin-top: 10px; }
     </style>
 </head>
@@ -41,9 +95,12 @@
 
     <div class="card">
         <h1>✨ Peace & Calm ✨</h1>
-        <h2>Relaxing time for your future!</h2>
+        <h2>Relaxing time for you</h2>
         
-        <p>পাহাড়ের কোল ঘেঁষে শান্ত আকাশ আর প্রকৃতির মাঝে একটু রিল্যাক্স করার মুহূর্ত। আপনার আগামী দিনগুলোও যেন এমন সুন্দর আর শান্তিময় হয়।</p>
+        <!-- নিচের লাইনে আপনার পছন্দের মেসেজটি লিখুন -->
+        <div class="message-box">
+            এখানে আপনার মনের মতো সুন্দর স্পেশাল মেসেজটি টাইপ করে দিন। আপনি যা লিখতে চান তা এখানেই একদম স্টাইলিশ ফন্টে দেখাবে।
+        </div>
         
         <audio controls>
             <source src="music.mp3" type="audio/mpeg">
